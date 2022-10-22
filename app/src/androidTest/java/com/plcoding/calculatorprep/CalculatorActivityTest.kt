@@ -24,12 +24,6 @@ class CalculatorActivityTest {
     val androidComposeTestRule = createAndroidComposeRule<CalculatorActivity>()
     // use createAndroidComposeRule<YourActivity>() if you need access to an activity
 
-    @Before
-    fun setup() {
-        // androidComposeTestRule.setContent {
-        //     CalculatorMainView(viewModel = viewModel)
-        // }
-    }
 
     @Test
     fun givenOneAndTwo_whenOperationIsAdding_thenTheResultIsThree_normalTest() {
