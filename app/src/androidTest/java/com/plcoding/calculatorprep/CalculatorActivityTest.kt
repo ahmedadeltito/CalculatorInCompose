@@ -29,7 +29,6 @@ class CalculatorActivityTest {
         // androidComposeTestRule.setContent {
         //     CalculatorMainView(viewModel = viewModel)
         // }
-        CalculatorPage.androidComposeTestRule = androidComposeTestRule
     }
 
     @Test
@@ -40,18 +39,5 @@ class CalculatorActivityTest {
         androidComposeTestRule.onNodeWithText("2").performClick()
         androidComposeTestRule.onNodeWithText("=").performClick()
         androidComposeTestRule.onNodeWithText("3.0").assertExists()
-    }
-
-    @Test
-    fun givenOneAndTwo_whenOperationIsAdding_thenTheResultIsThree_robotDesignPattern() {
-        CalculatorRobot {
-            performClickOnNumberButton(number = 1)
-            performClickOnOperationButton(operation = CalculatorOperation.Add)
-            performClickOnNumberButton(number = 2)
-            performClickOnCalculateButton()
-        }
-        CalculatorVerifier {
-            verifyTextViewEqualTo(result = 3.0)
-        }
     }
 }
