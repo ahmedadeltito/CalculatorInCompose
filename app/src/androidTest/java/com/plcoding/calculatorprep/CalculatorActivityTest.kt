@@ -24,8 +24,6 @@ class CalculatorActivityTest {
     val androidComposeTestRule = createAndroidComposeRule<CalculatorActivity>()
     // use createAndroidComposeRule<YourActivity>() if you need access to an activity
 
-    private val viewModel = CalculatorViewModel()
-
     @Before
     fun setup() {
         // androidComposeTestRule.setContent {
