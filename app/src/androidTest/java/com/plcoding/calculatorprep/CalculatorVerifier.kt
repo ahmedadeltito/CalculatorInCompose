@@ -15,7 +15,7 @@ object CalculatorVerifier {
     /**
      * Verifies that the text view will contain the correct value after operate two numbers.
      */
-    fun verifyTextViewEqualTo(result: Double) {
-        CalculatorPage.textView(result.toString()).assertExists()
+    fun verifyResultEqualTo(result: Double) {
+        CalculatorPage.textView(result = result.toString()).assertExists()
     }
 }

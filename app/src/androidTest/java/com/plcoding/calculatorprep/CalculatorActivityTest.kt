@@ -51,7 +51,7 @@ class CalculatorActivityTest {
             performClickOnCalculateButton()
         }
         CalculatorVerifier {
-            verifyTextViewEqualTo(result = 3.0)
+            verifyResultEqualTo(result = 3.0)
         }
     }
 }
