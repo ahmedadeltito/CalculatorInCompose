@@ -102,7 +102,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(7))
+                        viewModel.onAction(CalculatorAction.Number(number = 7))
                     }
                 )
                 CalculatorNumberButton(
@@ -111,7 +111,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(8))
+                        viewModel.onAction(CalculatorAction.Number(number = 8))
                     }
                 )
                 CalculatorNumberButton(
@@ -120,7 +120,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(9))
+                        viewModel.onAction(CalculatorAction.Number(number = 9))
                     }
                 )
                 CalculatorOperationButton(
@@ -144,7 +144,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(4))
+                        viewModel.onAction(CalculatorAction.Number(number = 4))
                     }
                 )
                 CalculatorNumberButton(
@@ -153,7 +153,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(5))
+                        viewModel.onAction(CalculatorAction.Number(number = 5))
                     }
                 )
                 CalculatorNumberButton(
@@ -162,7 +162,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(6))
+                        viewModel.onAction(CalculatorAction.Number(number = 6))
                     }
                 )
                 CalculatorOperationButton(
@@ -186,7 +186,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(1))
+                        viewModel.onAction(CalculatorAction.Number(number = 1))
                     }
                 )
                 CalculatorNumberButton(
@@ -195,7 +195,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(2))
+                        viewModel.onAction(CalculatorAction.Number(number = 2))
                     }
                 )
                 CalculatorNumberButton(
@@ -204,7 +204,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(1f)
                         .weight(1f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(3))
+                        viewModel.onAction(CalculatorAction.Number(number = 3))
                     }
                 )
                 CalculatorOperationButton(
@@ -228,7 +228,7 @@ fun CalculatorMainView(viewModel: CalculatorViewModel) {
                         .aspectRatio(2f)
                         .weight(2f),
                     onClick = {
-                        viewModel.onAction(CalculatorAction.Number(0))
+                        viewModel.onAction(CalculatorAction.Number(number = 0))
                     }
                 )
                 CalculatorNumberButton(

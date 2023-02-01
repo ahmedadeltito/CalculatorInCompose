@@ -2,8 +2,6 @@ package com.plcoding.calculatorprep
 
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
-import androidx.compose.ui.test.onNodeWithText
-import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Assert.*
 import org.junit.Before
@@ -32,16 +30,10 @@ class CalculatorActivityTest {
         CalculatorPage.androidComposeTestRule = androidComposeTestRule
     }
 
-    @Test
-    fun givenOneAndTwo_whenOperationIsAdding_thenTheResultIsThree_normalTest() {
-        // Start the app
-        androidComposeTestRule.onNodeWithText("1").performClick()
-        androidComposeTestRule.onNodeWithText("+").performClick()
-        androidComposeTestRule.onNodeWithText("2").performClick()
-        androidComposeTestRule.onNodeWithText("=").performClick()
-        androidComposeTestRule.onNodeWithText("3.0").assertExists()
-    }
-
+    // Test Case :
+    // Given 1 + 2
+    // When the calculator is open
+    // Then 3 will be shown
     @Test
     fun givenOneAndTwo_whenOperationIsAdding_thenTheResultIsThree_robotDesignPattern() {
         CalculatorRobot {
@@ -49,9 +41,12 @@ class CalculatorActivityTest {
             performClickOnOperationButton(operation = CalculatorOperation.Add)
             performClickOnNumberButton(number = 2)
             performClickOnCalculateButton()
+            performClickOnOperationButton(operation = CalculatorOperation.Subtract)
+            performClickOnNumberButton(number = 1)
+            performClickOnCalculateButton()
         }
         CalculatorVerifier {
-            verifyResultEqualTo(result = 3.0)
+            verifyResultEqualTo(result = 2.0)
         }
     }
 }

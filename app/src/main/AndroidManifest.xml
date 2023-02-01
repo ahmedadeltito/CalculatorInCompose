@@ -9,8 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculatorPrep">
         <activity
-            android:name=".CalculatorActivity"
             android:exported="true"
+            android:name=".CalculatorActivity"
             android:theme="@style/Theme.CalculatorPrep">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
